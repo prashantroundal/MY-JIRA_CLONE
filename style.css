@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.color-1 {
+    background-color: red;
+}
+
+.color-2 {
+    background-color: darkgreen;
+}
+
+.color-3 {
+    background-color: grey;
+}
+
+.wrapper,
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* .wrapper { */ */
+    /* background: red; */
+.wrapper>header {
+    padding: 30px;
+    display: flex;
+    /* background: blue; */
+    border-bottom: 1px solid blue;
+}
+
+.wrapper footer {
+    margin-top: auto;
+    background: green;
+}
+
+.wrapper main {
+    /* background: blueviolet; */
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.wrapper .box {
+    transition: 200ms all ease;
+    background: greenyellow;
+    height: fit-content;
+    width: 250px;
+    border: 1px solid skyblue;
+    border-radius: 6px;
+    margin: 10px;
+    box-shadow: 0 3px 6px rgba(230, 22, 22, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.wrapper header .heading {
+    font-size: 2rem;
+    margin-right: auto;
+}
+
+.wrapper header .plus {
+    height: 50px;
+    width: 50px;
+    background-color: lightskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: xx-large;
+    font-weight: 900;
+    border: none;
+    /* transform: scale(1); */
+    transition: all ease 200ms;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.plus:hover {
+    transform: scale(0.9);
+}
+
+.box header {
+    display: flex;
+    justify-content: end;
+    border-bottom: 1px solid grey;
+    align-items: center;
+}
+
+.box .icon {
+    margin: 10px;
+    color: white;
+    /* background: red; */
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: small;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.box-heading {
+    margin-left: 6px;
+    margin-right: auto;
+    font-size: 1.5rem;
+}
+
+.dialog {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(47, 126, 190, 0.24);
+}
+
+.dialog .dialog-box {
+    opacity: 1;
+    position: relative;
+    width: 500px;
+    background-color: lightskyblue;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.dialog .dialog-box header {
+    background-color: rgb(36, 158, 206);
+    padding: 10px;
+    text-align: center;
+    color: snow;
+}
+
+.cross {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    background-color: royalblue;
+    width: 40px!important;
+    height: 40px!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    font-size: larger;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.dialog .dialog-box .box-body,
+.dialog .dialog-box div input,
+.dialog .dialog-box div textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.dialog .dialog-box main {
+    margin-top: 20px;
+}
+
+main .box:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+main {
+    padding: 20px;
+    display: flex;
+}
+
+.box main textarea {
+    height: 80%;
+    width: 100%;
+    border-radius: 8px;
+    padding: 5px;
+}
